@@ -3,5 +3,5 @@
   connection: ssh
   become: yes
   tasks:
-        - name: Install putty
+        - name: Install putty on ubuntu
           apt: name=putty state=present
