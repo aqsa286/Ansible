@@ -2,6 +2,8 @@
   user: ansible
   connection: ssh
   become: yes
+  vars: 
+      pkgname: putty 
   tasks:
-       - name: Install putty
-         apt: name=putty state=present
+        - name: Install putty
+          apt: name="{{pkgname}}" state=present
