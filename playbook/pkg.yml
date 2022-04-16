@@ -1,0 +1,7 @@
+- hosts: demo
+  user: ansible
+  connection: ssh
+  become: yes
+  tasks:
+       - name: Install putty
+         apt: name=putty state=present
